@@ -1029,6 +1029,7 @@ const timelineManager = (event) => {
             blurDiv.style.display = "none";
         }, 2500);
     } else if (clickedSquare === "timeline-button-enter") {
+        document.getElementById("back-div").style.display = "none";
         setTimeout(() => {
             document.getElementById(topicPageList[0]).style.display = "none";
             document.getElementById("timeline-page").style.display = "block";
