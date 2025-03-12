@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לומדת יועמ"ש</title>
+    <link rel="icon" type="image/x-icon" href="assets/general/page-icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body id="home-page" dir="rtl">
+    <div id="blur-div"></div>
+    <div id="main-start-page">
+        <div class="star-line-div">
+            <img src="assets/general/starLineTop.svg" alt="star-line" class="star-line"/>
+        </div>
+        <div class="lomda-title-div">
+            <img src="assets/lomdaTitle.svg" alt="lomda-title" class="lomda-title"/>
+        </div>
+        <div class="start-button-main-div">
+            <img src="assets/startPageButton.svg" alt="start-page-button" class="start-button-main" id="start-lomda-button"/>
+        </div>
+        <img src="assets/general/dotGradinet.png" alt="dot-gradinet" class="dot-gradient"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side checkers-left"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side checkers-right"/>
+        <img src="assets/general/doodle1.svg" alt="doodle1" class="doodle-one-main"/>
+        <img src="assets/general/doodle2.svg" alt="doodle2" class="doodle-two-main"/>
+        <div class="credits-div" id="credits-div">
+            <img src="assets/credits.png" alt="credits-img" class="credits-img">
+            <p class="credits-text">קרדיטים</p>
+        </div>
+    </div>
+    <div id="main-topic-page">
+        <div class="topic-title-div">
+            <img src="assets/topicTitle.svg" alt="topic-title" class="topic-title"/>
+        </div>
+        <button type="button" class="red-button" id="timeline-button-enter" onclick="timelineManager(event)">לציר הזמן</button>
+        <img src="assets/general/bottomCheckersBar2.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar2.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar">
+        <div class="topic-div">
+            <img src="assets/topic1.svg" alt="topic1" class="topic-star" id="star-topic1"/>
+            <img src="assets/topic2.svg" alt="topic2" class="topic-star" id="star-topic2"/>
+            <img src="assets/topic3.svg" alt="topic3" class="topic-star" id="star-topic3"/>
+            <img src="assets/topic4.svg" alt="topic4" class="topic-star" id="star-topic4"/>
+        </div>
+        <img src="assets/general/starType1.svg" alt="star-type1" class="star1-bg"/>
+        <img src="assets/general/starType2.svg" alt="star-type2" class="star2-bg"/>
+    </div>
+    <div id="pakar-jobs-clouds-page">
+        <div class="up-line-div">
+            <div class="topic-arrow-div">
+                <p class="topic-text">תפקידי פיקוד העורף:</p>
+                <img src="assets/general/yellowArrow.svg" alt="yellow-arrow" class="yellow-arrow-top"/>
+            </div>
+        </div>
+        <div class="cloud-div" id="cloud-div">
+            <img src="assets/cloudsPage/blueCloud.svg" alt="blue-cloud" class="cloud" id="blue-cloud"/>
+            <img src="assets/cloudsPage/greenCloud.svg" alt="green-cloud" class="cloud" id="green-cloud"/>
+            <img src="assets/cloudsPage/orangeCloud.svg" alt="orange-cloud" class="cloud" id="orange-cloud"/>
+        </div>
+        <img src="assets/general/checkersBar2.svg" alt="checkers-bar" class="checkers-bar"/>
+        <img src="assets/general/generalChar.svg" alt="general-char" class="cloud-char"/>
+        <img src="assets/general/starType1.svg" alt="star-type1" class="star1-bg star1-cloud-bg"/>
+        <img src="assets/general/starType2.svg" alt="star-type2" class="star2-bg star2-cloud-bg"/>
+        <img src="assets/general/doodle1.svg" alt="doodle1" class="doodle-one-cloud"/>
+        <img src="assets/general/doodle3.svg" alt="doodle3" class="doodle-three-cloud"/>
+        <img src="assets/general/doodle4.svg" alt="doodle4" class="doodle-four-cloud"/>
+        <img src="assets/general/doodle5.svg" alt="doodle5" class="doodle-five-cloud"/>
+        <button id="next-page-button">למושג הבא</button>
+    </div>
+    <div id="cloud-page1">
+        <div class="topic-arrow-div">
+            <p class="topic-text cloud-topic-text">תפקידי פיקוד העורף:</p>
+            <img src="assets/general/yellowArrowWithBorder.svg" alt="yellow-arrow" class="yellow-arrow-top"/>
+        </div>
+        <div class="yellow-big-cloud-div">
+             <div id="blue-hat-info">
+                <div class="cloud-text-container">
+                    <img src="assets/cloudsPage/blueHat.svg" alt="blue-hat" class="cloud-hat"/>
+                    <div class="cloud-title">
+                        <p class="main-cloud-title">שירות הג"א</p>
+                        <p class="mini-cloud-title">שירות ההתגוננות האזרחית</p>
+                    </div>
+                    <p class="cloud-text">אחראי על ארגון וניהול ההתגוננות האזרחית במדינה, למעט מרחבי הפיקודים המרחביים, לפי חוק ההתגוננות האזרחית, התשי”א 1951</p>
+                </div>
+             </div>
+             <div id="orange-hat-info">
+                <div class="cloud-text-container">
+                    <img src="assets/cloudsPage/orangeHat.svg" alt="orange-hat" class="cloud-hat"/>
+                    <div class="cloud-title">
+                        <p class="main-cloud-title">קצין חיל ראשי</p>
+                        <p class="mini-cloud-title orange-hat-mini-title">סמכות מקצועית ראשית בנושאי ההתגוננות האזרחית, החילוץ וההצלה</p>
+                    </div>
+                    <p class="cloud-text">מנחה מקצועית את כלל יחידות צה”ל, קצין חייל ראשי. להרחבה ניתן לראות את הפ”ע 2.0304</p>
+                </div>
+             </div>
+             <div id="green-hat-info">
+                <div class="cloud-text-container">
+                    <img src="assets/cloudsPage/greenHat.svg" alt="orange-hat" class="cloud-hat"/>
+                    <div class="cloud-title">
+                        <p class="main-cloud-title">פיקוד מרחבי</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <button class="red-button" id="back-button-cloud">חזור</button>
+        <img src="assets/cloudsPage/blueHatChar.svg" alt="blue-hat-char" class="cloud-hat-char" id="blue-char">
+        <img src="assets/cloudsPage/orangeHatChar.svg" alt="orage-hat-char" class="cloud-hat-char" id="orange-char">
+        <img src="assets/cloudsPage/greenHatChar.svg" alt="green-hat-char" class="cloud-hat-char" id="green-char">
+        <img src="assets/general/doodle1.svg" alt="doodle1" class="doodle-one-cloud doodle-one-spec-cloud"/>
+        <img src="assets/general/doodle3.svg" alt="doodle3" class="doodle-three-cloud doodle-three-spec-cloud"/>
+        <img src="assets/general/doodle5.svg" alt="doodle5" class="doodle-five-cloud doodle-five-spec-cloud"/>
+        <img src="assets/general/doodle4.svg" alt="doodle4" class="doodle-four-cloud"/>
+        <img src="assets/general/starType1.svg" alt="star-type1" class="star1-bg star1-cloud-bg"/>
+        <img src="assets/general/starType2.svg" alt="star-type2" class="star2-bg star2-cloud-bg"/>
+    </div>
+    <div class="container">
+        <div class="left-layer"></div>
+        <div class="left-layer left-layer2"></div>
+        <div class="left-layer left-layer3"></div>
+        <div class="left-layer left-layer4"></div>
+    </div>
+    <div id="emergency-page">
+        <img src="assets/emergencyPage/title.svg" alt="emergency-page-text" class="emergency-page-text">
+        <div class="side-box-left-div">
+            <img src="assets/emergencyPage/side-box-left-text.svg" alt="side-box-left" class="side-box side-box-left"/>
+        </div>
+        <div class="side-box-right-div">
+            <img src="assets/emergencyPage/side-box-right-text.svg" alt="side-box-right" class="side-box side-box-right"/>
+        </div>
+        <button class="red-button" id="emergency-page-next-button" onclick="topic1Manager()">לפרק הבא</button>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+    <div id="civil-defense-page">
+        <img src="assets/general/starLineTop.svg" alt="star-line" class="star-line-civil-defense"/>
+        <div class="civil-defense-main-div">
+            <div class="civil-defense-info-div" id="civil-defense-info-div-main">
+                <img src="assets/civilDefensePage/civilDefencseMainText.svg" alt="main-text" class="civil-defense-main-text"/>
+                <div class="civil-defense-topic-div" id="civil-defense-topic-div">
+                    <div class="civil-defense-topic-div-spec">
+                        <button class="red-button civil-defense-topic-button" id="threat-button">ממד האיום</button>
+                        <img src="assets/civilDefensePage/dangerSign.svg" alt="danger-sign" class="button-sign"/>
+                    </div>
+                    <div class="civil-defense-topic-div-spec">
+                        <button class="red-button civil-defense-topic-button" id="time-button">ממד הזמן</button>
+                        <img src="assets/civilDefensePage/clockSign2.svg" alt="clock-sign2" class="button-sign"/>
+                    </div>
+                    <div class="civil-defense-topic-div-spec"> 
+                        <button class="red-button civil-defense-topic-button" id="operations-button">ממד הפעולות</button>
+                        <img src="assets/civilDefensePage/clockSign.svg" alt="clock-sign" class="button-sign"/>
+                    </div>
+                </div>
+                <button class="red-button" id="topic2-ques-button">לתרגול</button>
+            </div>
+
+
+
+
+            <div class="civil-defense-info-div" id="civil-defense-info-div-topic">
+                <div class="left-div-civil-defense">
+                    <div id="civil-defense-info-div-threat">
+                        <img src="assets/civilDefensePage/threatTitle.svg" alt="threat-title" class="civil-defense-topic-title"/>
+                        <p class="civil-defense-spec-text"> שירות הג”א עוסק ב-”התקפה” <br> “התקפה” - כל אחד מאלה: <br></p>
+                        <p class="civil-defense-spec-text num-list-civil-defense"> 1. הפצצה אווירית, הפגזה ארטילית או רקטית וכל סוג אחר של ירי ארוך טווח מצד אויב <br> 2. ניסיון פגיעה מצד צבא של מדינת אויב </p>
+                        <div class="threat-table-div">
+                            <p class="civil-defense-spec-text threat-table-headline">מלאו את הטבלה שלפניכם</p>
+                            <table class="civil-defense-threat-table">
+                                <tr>
+                                    <th>האיום</th>
+                                    <th>התקפה?</th>
+                                </tr>
+                                <tr>
+                                    <td>רקטה מג'נין</td>
+                                    <td id="threat-answer1" class="table-answer"></td>
+                                </tr>
+                                <tr>
+                                    <td>חדירת מחבלים מלבנון</td>
+                                    <td id="threat-answer2" class="table-answer"></td>
+                                </tr>
+                                <tr>
+                                    <td>תמרון של הצבא הסורי ברמת הגולן</td>
+                                    <td id="threat-answer3" class="table-answer"></td>
+                                </tr>
+                                <tr>
+                                    <td>כטמ"ם מרצועת עזה</td>
+                                    <td id="threat-answer4" class="table-answer"></td>
+                                </tr>
+                            </table>
+                            <button class="blue-button" id="table-threat-button">אישור</button>
+                            <ul class="table-threat-options" id="table-threat-options">
+                                <li id="threat-option1">כן</li>
+                                <li id="threat-option2">לא</li>
+                                <li id="threat-option3">כן ולא</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="civil-defense-info-div-time">
+                        <img src="assets/civilDefensePage/timeTitle.svg" alt="time-title" class="civil-defense-topic-title"/>
+                        <div id="time-info-div">
+                            <img src="assets/civilDefensePage/timeInfo.svg" alt="time-info" class="time-info-img"/>
+                            <button class="blue-button" id="civil-defense-time-button">לתרגול</button>
+                        </div>
+                        <div id="ques-time">
+                            <p class="ques-time-text">בואו נתרגל! <br> שימו לב כי ישנן פעולות שמתפרשות בכמה ממדים של הזמן</p>
+                            <div class="arrow-img-ques-time">
+                                <div id="invisible-div"></div>
+                                <div class="arrow-ans-time-ques dropzone" id="before-ans-div"></div>
+                                <div class="arrow-ans-time-ques dropzone" id="while-ans-div"></div>
+                                <div class="arrow-ans-time-ques dropzone" id="after-ans-div"></div>
+                                <img src="assets/civilDefensePage/timeArrowsWtext.svg" alt="time-arrows" class="time-ques-arrows"/>
+                            </div>
+                            <div class="ques-time-ans-div dropzone" id="ques-time-ans-div">
+                                <p class="ques-time-ans" id="time-ques-ans1" draggable="true">הודעת CB</p>
+                                <p class="ques-time-ans" id="time-ques-ans2" draggable="true">צווי חלב שקדים בעניין חומרים מסוכנים</p>
+                                <p class="ques-time-ans" id="time-ques-ans3" draggable="true">התקנת צופרים</p>
+                                <p class="ques-time-ans" id="time-ques-ans4" draggable="true">מדיניות ההתגוננות</p>
+                                <p class="ques-time-ans" id="time-ques-ans5" draggable="true">צווי חלב שקדים בעניין חומרים מסוכנים</p>
+                                <p class="ques-time-ans" id="time-ques-ans6" draggable="true">מדיניות ההתגוננות</p>
+                            </div>
+                            <button class="blue-button" id="ans-time-button">אישור</button>
+                             <p id="see-ans-button-time">התשובה הנכונה:<br>הודעת CB - לפני ההתקפה <br> צווי חלב שקדים בעניין חומרים מסוכנים - לפני ההתקפה ובזמן ההתקפה<br> מדיניות ההתגוננות - בזמן ההתקפה ואחרי ההתקפה<br>התקנת צופרים - לפני ההתקפה</p>
+                        </div>
+                    </div>
+                    <div id="civil-defense-info-div-operations">
+                        <img src="assets/civilDefensePage/operationsTitle.svg" alt="operations-title" class="civil-defense-topic-title"/>
+                        <div class="operations-img-main-div">
+                            <div class="operations-img-div">
+                                <img src="assets/civilDefensePage/operations/redImage3.svg" alt="example-img" class="operations-img">
+                                <img src="assets/civilDefensePage/operations/redImageBlock3.svg" alt="red-block-operations" class="red-block-operations">
+                            </div>
+                            <div class="operations-img-div">
+                                <img src="assets/civilDefensePage/operations/redImage4.svg" alt="example-img" class="operations-img">
+                                <img src="assets/civilDefensePage/operations/redImageBlock4.svg" alt="red-block-operations" class="red-block-operations">
+                            </div>
+                            <div class="operations-img-div">
+                                <img src="assets/civilDefensePage/operations/redImage5.svg" alt="example-img" class="operations-img">
+                                <img src="assets/civilDefensePage/operations/redImageBlock5.svg" alt="red-block-operations" class="red-block-operations">
+                            </div>
+                            <div class="operations-img-div" id="operations-img-div1">
+                                <img src="assets/civilDefensePage/operations/redImage1.svg" alt="example-img" class="operations-img">
+                                <img src="assets/civilDefensePage/operations/redImageBlock1.svg" alt="red-block-operations" class="red-block-operations">
+                            </div>
+                            <div class="operations-img-div" id="operations-img-div2">
+                                <img src="assets/civilDefensePage/operations/redImage2.svg" alt="example-img" class="operations-img">
+                                <img src="assets/civilDefensePage/operations/redImageBlock2.svg" alt="red-block-operations" class="red-block-operations">
+                            </div>
+                        </div>
+                        <button class="blue-button" id="next-extra-info-operations1">להרחבה נוספת</button>
+                    </div>
+                    <div id="more-info-operations-div1">
+                        <img src="assets/civilDefensePage/shelterTitle1.svg" alt="shelter-title1" class="civil-defense-topic-title"/>
+                        <img src="assets/civilDefensePage/operations/operations-extra-info1.svg" alt="extra-info1" class="operations-extra-info"/>
+                        <div class="operations-buttons-div">
+                            <button class="blue-button" id="previous-extra-info-operations1">חזור</button>
+                            <button class="blue-button" id="next-extra-info-operations2">המשך</button>
+                        </div>
+                    </div>
+                    <div id="more-info-operations-div2">
+                        <img src="assets/civilDefensePage/shelterTitle1.svg" alt="shelter-title1" class="civil-defense-topic-title"/>
+                        <img src="assets/civilDefensePage/operations/operations-extra-info2.svg" alt="extra-info1" class="operations-extra-info"/>
+                        <div class="operations-buttons-div">
+                            <button class="blue-button" id="previous-extra-info-operations2">חזור</button>
+                            <button class="blue-button" id="next-extra-info-operations3">המשך</button>
+                        </div>
+                    </div>
+                    <div id="more-info-operations-div3">
+                        <img src="assets/civilDefensePage/shelterTitle2.svg" alt="shelter-title1" class="civil-defense-topic-title"/>
+                        <img src="assets/civilDefensePage/operations/operations-extra-info3.svg" alt="extra-info2" class="operations-extra-info"/>
+                        <div class="operations-buttons-div">
+                            <button class="blue-button" id="previous-extra-info-operations3">חזור</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div-civil-defense">
+                    <img src="assets/civilDefensePage/civilDefenseSideText.svg" alt="side-text" class="civil-defense-side-text"/>
+                    <button class="blue-button" id="back-button-civil-defense">חזרה לדף הקודם</button>
+                </div>
+            </div>
+            <img src="assets/civilDefensePage/yellowBox.svg" alt="yellow-box" class="yellow-box-big"/>
+        </div>
+    </div>
+    <div id="page-test">
+        <div class="civil-ques-div">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img" id="ques-red-img"/>
+            <p id="ques-red-text">שאלה <br> #1</p>
+            <img src="assets/quesPage/quesInstructions.svg" alt="ques-instructions" class="ques-instructions-img"/>
+            <div class="civil-instructions-div"><p id="ques-text">פיקוד העורף הוא הגורם שאחראי על הועדת מחסה ציבורי?</p></div>
+            <div class="civil-ans-div" id="civil-ans-div">
+                <button id="false-button-civil" class="civil-ans-div-buttons">לא נכון</button>
+                <button id="true-button-civil" class="civil-ans-div-buttons">נכון</button>
+            </div>
+            <p class="civil-instructions-text">לחצו על אחת מהאפשרויות</p>
+            <button class="yellow-button" id="ans-ques-button">אישור</button>
+        </div>
+        <img src="assets/general/checkersBar2.svg" alt="checkers-bar" class="checkers-bar"/>
+        <img src="assets/general/starType1.svg" alt="star-type1" class="star1-bg star1-cloud-bg"/>
+        <img src="assets/general/starType2.svg" alt="star-type2" class="star2-bg star2-cloud-bg"/>
+        <img src="assets/general/doodle1.svg" alt="doodle1" class="doodle-one-cloud"/>
+        <img src="assets/general/doodle3.svg" alt="doodle3" class="doodle-three-ques"/>
+        <img src="assets/general/doodle4.svg" alt="doodle4" class="doodle-four-cloud"/>
+        <img src="assets/general/doodle5.svg" alt="doodle5" class="doodle-five-cloud"/>
+        <div class="back-div" id="fake-back-button-div">
+            <img src="assets/quesPage/ques1Back.svg" alt="back-button" class="back-button" id="fake-back-button"/>
+        </div>
+    </div>
+
+    <div id="emergency-sit-page">
+        <h1 class="es-title">מצבי החירום באירוע הג"א</h1>
+        <div id="es-main-div">
+            <div class="side-box-left-div">
+                <img src="assets/emergencySitPage/megaphoneSide.svg" alt="side-box-left" class="side-box-es side-box-left-es" id="megaphone"/>
+            </div>
+            <div class="side-box-right-div">
+                <img src="assets/emergencySitPage/rocketSide.svg" alt="side-box-right" class="side-box-es side-box-right-es" id="rocket"/>
+            </div>
+            <button class="red-button back-button-es" id="es-page1-next-button">לפרק הבא</button>
+            <p>לחצו על כל אחד מהסוגים למידע נוסף</p>
+        </div>
+        <div id="es-rocket-div">
+            <img src="assets/emergencySitPage/rocketMain.svg" alt="main-side-box" class="main-side-box-es"/>
+            <img src="assets/emergencySitPage/rocketMainSide.svg" alt="side-box-rocket" class="rocket-side-box-es"/>
+            <button class="red-button back-button-es" id="back-button-rocket">חזרה לדף הקודם</button>
+        </div>
+        <div id="es-megaphone-div">
+            <img src="assets/emergencySitPage/megaPhoneMain.svg" alt="main-side-box" class="main-side-box-es"/>
+            <button class="red-button back-button-es" id="back-button-megaphone">חזרה לדף הקודם</button>
+        </div>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+    <div id="es-photos-page">
+        <h1 class="es-title">מצבי החירום באירוע הג"א</h1>
+        <img src="assets/emergencySitPage/esImgArrow.svg" alt="img-arrow" class="es-img-arrow"/>
+        <button class="red-button" id="next-page-es-button" onclick="topic1Manager()">לדף הבא</button>
+        <img src="assets/emergencySitPage/esImgMain1.svg" alt="es-img1" class="es-img1"/>
+        <img src="assets/emergencySitPage/esImgMain2.svg" alt="es-img2" class="es-img2"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+    <div id="es-sum-table">
+        <img src="assets/emergencySitPage/es-table-sum-title.svg" alt="sum-table-title" class="es-table-title">
+        <div class="es-yellow-main-div">
+            <div class="es-table-div-ans-main">
+                <div id="invisible-div-es-table"></div>
+                <div class="es-table-div-ans dropzone" id="attack-div-ans">
+                    <p class="table-es-title">שעת התקפה</p>
+                </div>
+                <div class="es-table-div-ans dropzone" id="attackspecial-div-ans">
+                    <p class="table-es-title table-es-title-long">שעת התקפה ומצב מיוחד בעורף</p>
+                </div>
+                <div class="es-table-div-ans dropzone" id="special-div-ans">
+                    <p class="table-es-title">מצב מיוחד בעורף</p>
+                </div>
+            </div>
+            <div class="es-table-ans-div dropzone" id="es-table-ans-div">
+                <p class="ques-time-ans" id="es-table-ques-ans1" draggable="true">24 שעות</p>
+                <p class="ques-time-ans" id="es-table-ques-ans2" draggable="true">ריתוק משקי לא מתקיים</p>
+                <p class="ques-time-ans" id="es-table-ques-ans3" draggable="true">חלונות זמן ללא סמכות</p>
+                <p class="ques-time-ans" id="es-table-ques-ans4" draggable="true">הכרזה של הממשלה / שר הביטחון</p>
+                <p class="ques-time-ans" id="es-table-ques-ans5" draggable="true">שיקול דעת רחב לגורמים המקצועיים</p>
+                <p class="ques-time-ans" id="es-table-ques-ans6" draggable="true">ריתוק משקי מתקיים</p>
+                <p class="ques-time-ans" id="es-table-ques-ans7" draggable="true">תלות בהתנהגות האויב</p>
+            </div>
+            <button class="red-button" id="es-table-ans-button">אישור</button>
+        </div>
+    </div>
+    <div id="es-mini-pic-page">
+        <img src="assets/emergencySitPage/es-mini-pic-title.svg" alt="es-title" class="topic-title es-topic-title"/>
+        <div class="es-mini-pic-div">
+            <p>קביעת מדיניות ההתגוננות - כל הוראה הנדרשת להצלת חיים, ובכלל זה:</p>
+            <div class="operations-img-div">
+                <img src="assets/emergencySitPage/redImage1.svg" alt="example-img" class="operations-img">
+                <img src="assets/emergencySitPage/redImageBlock1.svg" alt="red-block-operations" class="red-block-operations">
+            </div>
+            <div class="operations-img-div">
+                <img src="assets/emergencySitPage/redImage2.svg" alt="example-img" class="operations-img">
+                <img src="assets/emergencySitPage/redImageBlock2.svg" alt="red-block-operations" class="red-block-operations">
+            </div>
+            <div class="operations-img-div">
+                <img src="assets/emergencySitPage/redImage3.svg" alt="example-img" class="operations-img">
+                <img src="assets/emergencySitPage/redImageBlock3.svg" alt="red-block-operations" class="red-block-operations">
+            </div>
+            <div class="operations-img-div">
+                <img src="assets/emergencySitPage/redImage4.svg" alt="example-img" class="operations-img">
+                <img src="assets/emergencySitPage/redImageBlock4.svg" alt="red-block-operations" class="red-block-operations">
+            </div>
+            <button class="red-button" id="next-page-es-button-mini-pic" onclick="topic1Manager()">לדף הבא</button>
+        </div>
+        <img src="assets/emergencySitPage/es-mini-pic-sub-text.svg" alt="es-sub-text" class="es-sub-text"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+    <div id="es-table-page">
+        <img src="assets/emergencySitPage/es-fin-title.svg" alt="title" class="es-fin-title"/>
+        <img src="assets/emergencySitPage/es-fin-table.svg" alt="table" class="es-fin-table"/>
+        <img src="assets/emergencySitPage/es-fin-sub-text.svg" alt="sub-text" class="es-fin-sub-text"/>
+        <button class="red-button es-fin-button" onclick="topic1Manager()">לדף הבא</button>
+    </div>
+    <div id="es-authority-page">
+        <img src="assets/emergencySitPage/es-auth-mini-title.svg" alt="es-title" class="topic-title es-topic-title"/>
+        <div class="es-mini-pic-div">
+            <img src="assets/emergencySitPage/es-auth-div-mini.svg" alt="div-mini" class="es-auth-div-pic"/>
+            <button class="red-button" id="next-page-es-button-mini-pic" onclick="topic1Manager()">לדף הבא</button>
+        </div>
+        <img src="assets/emergencySitPage/es-mini-pic-sub-text.svg" alt="es-sub-text" class="es-sub-text"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+
+    <div id="es-teamwork-page">
+        <img src="assets/emergencySitPage/esTeamworkTitle.svg" alt="es-teamwork-title" class="es-teamwork-title"/>
+        <img src="assets/emergencySitPage/esTeamworkDivPic.svg" alt="es-teamwork-div" class="es-teamwork-div"/>
+        <button class="red-button es-teamwork-button" onclick="topic1Manager()">לדף הבא</button>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-right"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-left"/>
+    </div>
+
+    <div id="civil-defense-page-two">
+        <img src="assets/general/starLineTop.svg" alt="star-line" class="star-line-civil-defense"/>
+        <div class="civil-defense-info-div civil-defense-info-div-two">
+                <img src="assets/civilDefenseTwo/civil-main-div-text2.svg" alt="main-text" class="civil-defense-main-text"/>
+                <img src="assets/civilDefenseTwo/civil-main-div-blocks.svg" alt="main-text" class="civil-defense-blocks"/>
+                <button class="red-button es-teamwork-button" onclick="topic1Manager()">לדף הבא</button>
+        </div>
+    </div>
+
+    <div id="civil-defense-page-three">
+        <img src="assets/general/starLineTop.svg" alt="star-line" class="star-line-civil-defense"/>
+        <div class="civil-defense-main-div">
+            <div class="civil-defense-info-div" id="civil-defense-info-div-main-two">
+                <img src="assets/civilDefenseTwo/civil-main-div-text2.svg" alt="main-text" class="civil-defense-main-text"/>
+                <div class="civil-defense-topic-div" id="civil-defense-topic-div">
+                    <div class="civil-defense-topic-div-spec">
+                        <button class="red-button civil-defense-topic-button2 civil-defense-topic-button-two" id="threat-button-two">ממד האיום</button>
+                        <img src="assets/civilDefensePage/dangerSign.svg" alt="danger-sign" class="button-sign"/>
+                    </div>
+                    <div class="civil-defense-topic-div-spec">
+                        <button class="red-button civil-defense-topic-button2 civil-defense-topic-button-two" id="time-button-two">ממד הזמן</button>
+                        <img src="assets/civilDefensePage/clockSign2.svg" alt="clock-sign2" class="button-sign"/>
+                    </div>
+                    <div class="civil-defense-topic-div-spec"> 
+                        <button class="red-button civil-defense-topic-button2 civil-defense-topic-button-two" id="operations-button-two">ממד הפעולות</button>
+                        <img src="assets/civilDefensePage/clockSign.svg" alt="clock-sign" class="button-sign"/>
+                    </div>
+                </div>
+                <button class="red-button cd-three-button" id="cd-three-button">לדף הבא</button>
+            </div>
+            <div class="civil-defense-info-div" id="civil-defense-info-div-topic-two">
+                <div class="left-div-civil-defense">
+                    <div id="civil-defense-info-div-threat-two">
+                        <img src="assets/civilDefensePage/threatTitle.svg" alt="threat-title" class="civil-defense-topic-title"/>
+                        <p class="threat-text-two">כל אירוע שאינו אירוע הג"א -<br>אירוע חירום אזרחי</p>
+                    </div>
+                    <div id="civil-defense-info-div-time-two">
+                        <img src="assets/civilDefensePage/timeTitle.svg" alt="time-title" class="civil-defense-topic-title"/>
+                        <img src="assets/civilDefenseTwo/timeTable.svg" alt="time-table" class="time-table-cd-two">
+                    </div>
+                    <div id="civil-defense-info-div-operations-two">
+                        <img src="assets/civilDefensePage/operationsTitle.svg" alt="operations-title" class="civil-defense-topic-title"/>
+
+                        <div id="first-op-div">
+                            <p>לפני שנעבור לתרגול - עלינו ללמוד שתי נושאים:</p>
+                            <button class="red-button op-move-button" id="authority-button-move" onclick="manageOpPages('cd-authority-page')">הסמכויות באירוע חירום</button>
+                            <button class="red-button op-move-button" id="two-table-button-move" onclick="manageOpPages('cd-two-table-page')">אירוע חירום אזרחי</button>
+                            <button class="red-button op-move-button" id="cd-op-main-button-move">לתרגול</button>
+                        </div>
+
+
+
+                        <div class="cd-operations-main-div-two" id="cd-operations-main-div-two">
+                            <h1 class="up-text">בכל אירוע - אפשרות להעברת אחריות</h1>
+                            <div class="idf-div">
+                                <p class="operations-div-title">צה"ל</p>
+                                <div class="dropzone" id="idf-div"></div>
+                            </div>
+                            <div class="police-div">
+                                <p class="operations-div-title">משטרת ישראל</p>
+                                <div class="dropzone" id="police-div"></div>
+                            </div>
+                            <h1 class="down-text">בכל אירוע - חובת סיוע הדדי</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div-civil-defense">
+                    <img src="assets/civilDefensePage/civilDefenseSideText.svg" alt="side-text" class="civil-defense-side-text" id="cd-two-side-text"/>
+                    <button class="blue-button" id="back-button-civil-defense-two">חזרה לדף הקודם</button>
+                    <div id="operations-right-div">
+                        <img src="assets/civilDefenseTwo/operations-inst.svg" alt="operations-inst" class="opeartions-inst">
+                        <div class="op-ans-div dropzone">
+                            <p class="ques-op-ans" id="op-ans-ques-ans1" draggable="true">שטחי אחריות לבט"פ צה"ל</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans2" draggable="true">מתקנים ביטחוניים</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans4" draggable="true">כלי תעבורה של מעהב"ט</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans6" draggable="true">חומ"ס ומפגעים סביבתיים</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans7" draggable="true">פח"ע, טב"ק ביולוגי וכימי</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans8" draggable="true">רעידות אדמה / צונאמי</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans3" draggable="true">אירוע קרינה רדיולוגי ותקלה בכורים</p>
+                            <p class="ques-op-ans" id="op-ans-ques-ans5" draggable="true">שטחי אחריות לבט"פ מ"י (כולל שטח שהוכרז "מצב מיוחד בעורף")</p>
+                        </div>
+                        <button class="blue-button" id="op-button-test-cd-two">אישור</button>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/civilDefensePage/yellowBox.svg" alt="yellow-box" class="yellow-box-big"/>
+        </div>
+    </div>
+
+    <div id="cd-authority-page">
+        <p class="cd-auth-title">הסמכויות באירוע חירום</p>
+        <div class="es-mini-pic-div cd-mini-pic-div">
+            <img src="assets/civilDefenseTwo/auth-two-div.svg" alt="div-mini" class="es-auth-div-pic cd-auth-div-pic"/>            
+        </div>
+        <div class="op-sub-div">
+            <h1>“באירוע חירום אזרחי, רשאי שוטר, נוסף על כל סמכויותיו לפי כל דין ולצורך טיפול באירוע, לעשות שימוש בסמכויותיו המפורטות להלן, באישור קצין משטרה ובתוך פרק הזמן שקבע באישורו, או אם ניתנה הכרזה כאמור בסעיף 90ב, כל עוד הכרזה כאמור בתוקף..”</h1>
+            <p>סעיף 90ד לפקודת המשטרה</p>
+        </div>
+        <button class="red-button cd-auth-button" id="before-cd-auth-button" onclick="manageOpPages('before')">לדף הקודם</button>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+
+    <div id="cd-two-table-page">
+        <img src="assets/civilDefenseTwo/cd-table-title.svg" alt="title" class="cd-table-title"/>
+        <img src="assets/civilDefenseTwo/cd-table-big.svg" alt="table" class="cd-big-table"/>
+        <img src="assets/civilDefenseTwo/cd-table-sub-text.svg" alt="sub-text" class="es-fin-sub-text cd-table-sub-text"/>
+        <button class="red-button cd-table-button" id="before-cd-table-button" onclick="manageOpPages('before')">לדף הקודם</button>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-right"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-left"/>
+    </div>
+
+
+    <div id="sum-page">
+        <img src="assets/sum-page/title.svg" alt="title" class="sp-title"/>
+        <div class="sum-page-yellow-div">
+            <div class="sum-test-pic-div">
+                <div id="invisible-div-sp"></div>
+                <div class="dropzone" id="sum-ans1"></div>
+                <div class="dropzone" id="sum-ans2"></div>
+                <div class="dropzone" id="sum-ans3"></div>
+                <div class="dropzone" id="sum-ans4"></div>
+                <div class="dropzone" id="sum-ans5"></div>
+                <div class="dropzone" id="sum-ans6"></div>
+            </div>
+            <div class="sp-down-div">
+                <div class="right-sp">
+                    <h1>מחסן מילים:</h1>
+                    <div class="drag-sp dropzone" id="drag-sp">
+                        <p class="ques-op-ans" id="sp-ans1" draggable="true">שעת התקפה</p>
+                        <p class="ques-op-ans" id="sp-ans2" draggable="true">מצב מיוחד בעורף</p>
+                        <p class="ques-op-ans" id="sp-ans4" draggable="true">אירוע חירום אזרחי</p>
+                        <p class="ques-op-ans" id="sp-ans5" draggable="true">אירוע חירום אחר שבשגרה</p>
+                        <p class="ques-op-ans" id="sp-ans3" draggable="true">אחריות כוללת ופו”ש בידי צה”ל/פקע”ר</p>
+                        <p class="ques-op-ans" id="sp-ans6" draggable="true">אחריות כוללת ופו”ש בידי משטרת ישראל</p>
+                    </div>
+                </div>
+                <div class="center-sp">
+                    <p>נוהל יחסי גומלין<br>פקע"ר - מ"י</p>
+                </div>
+                <div class="left-sp">
+                    <p>גררו משפטים ממחסן המילים לריבועים המתאימים, לאחר מכן לחצו על אישור</p>
+                    <button type="button" class="red-button sp-button" id="sp-button">אישור</button>
+                </div>
+            </div>
+        </div>
+        <button class="red-button cd-table-button" id="before-cd-table-button" onclick="manageOpPages('before')">לדף הקודם</button>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-right"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-left"/>
+    </div>
+
+    <div id="citizen-inquiries">
+        <img src="assets/citizen-inquiries-page/title.svg" alt="title" class="ci-title"/>
+        <img src="assets/citizen-inquiries-page/main-pic.svg" alt="ci-div-pic" class="ci-div-pic"/>
+        <button type="button" class="red-button ci-button" onclick="topic1Manager()">לדף הסיום</button>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-right"/>
+        <img src="assets/general/checkersBarSide.svg" alt="checkers-bar-side" class="checkers-bar-side-main checkers-bar-side-main-left"/>
+    </div>
+
+    <div id="fin-page">
+        <h1 class="fp-title">כל הכבוד, סיימת את הלומדה!</h1>
+        <div class="main-div-fin-page">
+            <p id="fin-page-text">ציונך הסופי הוא: <br> כל הכבוד!</p>
+            <img src="assets/general/fp-div-img.svg" alt="fp-div-img" class="fp-div-img"/>
+        </div>
+        <img src="assets/general/bottomCheckersBar.svg" alt="bottomCheckersBar" class="bottom-checkers-bar bottom-bar"/>
+        <img src="assets/general/bottomCheckersBar.svg" alt="topCheckersBar" class="bottom-checkers-bar top-bar"/>
+    </div>
+
+    <div class="back-div" id="back-div">
+        <img src="assets/general/backButton.svg" alt="back-button" class="back-button" id="back-button" onclick="manageBackButton(event)">
+        <div class="topic-dispaly-div" onclick="manageBackButton(event)">
+            <p class="topic-dispaly-text" id="topic1-back-button-text">כללי</p>
+            <p class="topic-dispaly-text" id="topic2-back-button-text">התגוננות אזרחית</p>
+            <p class="topic-dispaly-text" id="topic3-back-button-text">מצבי החירום באירוע הג”א</p>
+            <p class="topic-dispaly-text" id="topic4-back-button-text">אירוע חירום אזרחי</p>
+        </div>
+    </div>
+    
+    <div id="move-topic-animation">
+        <div class="top-layer" id="top-layer--1"></div>
+        <div class="top-layer" id="top-layer--2"></div>
+        <div class="top-layer" id="top-layer--3">
+            <p id="move-topic-animation-text">נושא 2</p>
+        </div>
+    </div>
+    
+    <div id="black-shadow-div"></div>
+    <div id="char-text-div">
+        <p class="char-text" id="char-text">לפיקוד העורף יש שלושה תפקידים מרכזיים שמוגדרים במקומות שונים</p>
+        <div id="left-arrow-text-box-div">
+            <img src="assets/general/arrow-left-text-box.svg" alt="left-arrow" id="left-arrow-text-box">
+        </div>
+    </div>
+    <img src="assets/soldierChars/solider2.png" alt="soldier-pic" id="soldier-pic-textbox"/>
+
+    <div id="credits-clicked">
+        <div class="black-shadow-div">
+            <h1 id="close-credits">X</h1>
+            <p>קרדיטים:</p>
+            <ul>
+                <li><span>עיצוב ופיתוח:</span> מדור פיתוח הדרכה</li>
+                <li><span>תוכן:</span> יעוץ משפטי פקע"ר</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="page-test-ans2">
+        <h1 class="fp-title">שאלות + תשובות</h1>
+        <div class="ans-div-test" id="ans1-div-test2">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #1</p>
+            <div class="civil-instructions-div"><p>חנות המזון הקרובה לביתך סגורה, האם אפשר להיכנס לחנות רק כי אני חבר הג"א?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: לא נכון!<br>הכניסה לכל מקום יכולה להיות רק לשם הצלת הנפש או הרכוש</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans2-div-test2">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #2</p>
+            <div class="civil-instructions-div"><p id="ques2-text-ans2">יש אזעקה ברחוב לאחר תקופה ממושכת והאוכלוסייה בבהלה. האם ניתן להנחות את האזרחים להיכנס למרחבים המוגנים הקרובים?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: נכון!<br>קצין הג"א יכול להנחות אוכלוסייה במצב של שעת התקפה</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans3-div-test2">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #3</p>
+            <div class="civil-instructions-div"><p>נדרש סיוע מארגון מד"א בעת שעת התקפה, האם קצין הג"א יכול להנחות את מד"א?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: נכון!<br>זאת תוך הזדהות מראש ובצורה סבירה. חשוב לציין שיש תורה פיקודית בתחום שיתוף פעולה עם ארגוני העזר, שמדא היא אחת מהם</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans4-div-test2">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #4</p>
+            <div class="civil-instructions-div"><p>יש עכשיו מצב מיוחד בעורף, ויש מקלט במרכז מסחרי שמלא בציוד ולא ניתן להיכנס אליו בעת אזעקה, האם חבר הג"א יכול להיכנס כדי לכפות ציות לדיני ההתגוננות האזרחית?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: נכון!<br>זאת תוך הזדהות מראש וציון מטרת הכניסה</h2></div>
+        </div>
+        <button class="red-button page-test-red-button" onclick="topic1Manager()">לדף הבא</button>
+    </div>
+
+    <div id="page-test-ans1">
+        <h1 class="fp-title">שאלות + תשובות</h1>
+        <div class="ans-div-test" id="ans1-div-test">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #1</p>
+            <div class="civil-instructions-div"><p>פיקוד העורף הוא הגורם שאחראי על הועדת מחסה ציבורי?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: לא נכון!<br> פיקוד העורף פועל להועדת מחסה ציבורי רק אם הרשות המקומית לא ממשת את אחריותה.</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans2-div-test">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #2</p>
+            <div class="civil-instructions-div"><p id="ques2-text-ans">הרשות המקומית אחראית על תקינות המקלטים הציבוריים בתחומה?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: נכון!<br>זאת לפי סעיף 14 לחוק ההתגוננות האזרחית</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans3-div-test">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #3</p>
+            <div class="civil-instructions-div"><p>אי אפשר לעשות שימוש דו תכליתי במקלט שהוא לא למטרת מחסה לצורי התגוננות אזרחית?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: לא נכון!<br>לפי סעיף 15 לחוק ההתגוננות האזרחית, ניתן לעשות</h2></div>
+        </div>
+        <div class="ans-div-test" id="ans4-div-test">
+            <img src="assets/quesPage/quesRed.svg" alt="ques-red" class="ques-red-img ans-red-img"/>
+            <p class="ques-red-text">שאלה <br> #4</p>
+            <div class="civil-instructions-div"><p>לפיקוד העורף יש סמכות לתת הוראות לרשות המקומית בנושא מקלטים ציבוריים?</p></div>
+            <div class="civil-instructions-div"><h2>התשובה הנכונה: נכון!<br>זאת לפי סעיף 12</h2></div>
+        </div>
+        <button class="red-button page-test-red-button" onclick="topic1Manager()">לדף הבא</button>
+    </div>
+
+    <div id="timeline-page">
+        <p class="explain-text-cloud">לחץ על כל ריבוע להרחבה</p>
+        <h1 class="timeline-title">ממשקי פיקוד העורף - המשרד להגנת העורף</h1>
+        <div class="timeline-main-div">
+            <div class="square-contaier-up">
+                <img src="assets/timeline/square1.svg" alt="square1" class="square-timeline" id="square1" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square3.svg" alt="square3" class="square-timeline" id="square3" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square5.svg" alt="square5" class="square-timeline" id="square5" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square7.svg" alt="square7" class="square-timeline" id="square7" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square9.svg" alt="square9" class="square-timeline" id="square9" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square11.svg" alt="square11" class="square-timeline" id="square11" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square13.svg" alt="square13" class="square-timeline" id="square13" onclick="timelineManager(event)"/>
+            </div>
+            <img src="assets/timeline/arrow-timeline.svg" alt="arrow-timeline" class="arrow-timeline"/>
+            <div class="square-contaier-down">
+                <img src="assets/timeline/square2.svg" alt="square2" class="square-timeline" id="square2" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square4.svg" alt="square4" class="square-timeline" id="square4" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square6.svg" alt="square6" class="square-timeline" id="square6" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square8.svg" alt="square8" class="square-timeline" id="square8" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square10.svg" alt="square10" class="square-timeline" id="square10" onclick="timelineManager(event)"/>
+                <img src="assets/timeline/square12.svg" alt="square12" class="square-timeline" id="square12" onclick="timelineManager(event)"/>
+            </div>
+            <button type="button" class="red-button" id="timeline-button-exit" onclick="timelineManager(event)">חזרה למפת נושאים</button>
+            <div id="card-container-timeline">
+                <img src="assets/timeline/card1.svg" alt="card-img" class="card-img-timeline" id="card-timeline"/>
+                <div id="black-shadow-div-timeline"></div>
+                <img src="assets/timeline/backArrow.svg" alt="back-arrow-timeline" class="back-arrow-timeline" id="back-arrow-timeline" onclick="timelineManager(event)">
+            </div>
+            <img src="assets/timeline/down-timeline-checkers.svg" alt="down-timeline-checkers" class="down-timeline-checkers">
+            <img src="assets/general/starType1.svg" alt="star-type1" class="star1-bg star1-cloud-bg"/>
+            <img src="assets/general/starType2.svg" alt="star-type2" class="star2-bg star2-cloud-bg"/>
+            <img src="assets/general/doodle1.svg" alt="doodle1" class="doodle-one-cloud"/>
+        </div>
+    </div>
+</body>
+</html>
