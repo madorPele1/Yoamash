@@ -287,6 +287,7 @@ const manageBackButton = (event) => {
         back = true;
         topic1Manager();
     } else {
+        document.getElementById("back-div").style.display = "none";
         setTimeout(() => {
             document.getElementById(topicPageList[currentPage]).style.display = "none";
             document.getElementById(topicPageList[0]).style.display = "block";
